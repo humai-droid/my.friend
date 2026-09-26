@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Little Story 💙</title>
+
+
+    <!-- FONT -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            font-family: "Poppins", sans-serif;
+
+            background: #f5f9ff;
+
+            color: #334155;
+
+            overflow-x: hidden;
+
+        }
+
+
+        /* =========================
+           OPENING
+        ========================= */
+
+        .opening {
+
+            position: fixed;
+
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #dbeafe,
+                    #eff6ff,
+                    #e0e7ff
+                );
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            flex-direction: column;
+
+            text-align: center;
+
+            z-index: 999;
+
+            transition: 1s;
+
+        }
+
+
+        .opening-icon {
+
+            font-size: 70px;
+
+            animation: goyang 2s infinite;
+
+        }
+
+
+        .opening h1 {
+
+            font-family: "Quicksand", sans-serif;
+
+            font-size: 34px;
+
+            color: #1e3a8a;
+
+            margin: 15px 20px;
+
+        }
+
+
+        .opening p {
+
+            max-width: 500px;
+
+            padding: 0 20px;
+
+            line-height: 1.8;
+
+            color: #64748b;
+
+        }
+
+
+        .open-button {
+
+            margin-top: 25px;
+
+            padding: 14px 30px;
+
+            border: none;
+
+            border-radius: 50px;
+
+            background: #2563eb;
+
+            color: white;
+
+            font-size: 15px;
+
+            font-weight: 600;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 8px 20px rgba(37,99,235,.25);
+
+            transition: .3s;
+
+        }
+
+
+        .open-button:hover {
+
+            transform: scale(1.06);
+
+        }
+
+
+        @keyframes goyang {
+
+            0%, 100% {
+                transform: rotate(-5deg);
+            }
+
+            50% {
+                transform: rotate(5deg);
+            }
+
+        }
+
+
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            flex-direction: column;
+
+            text-align: center;
+
+            padding: 30px;
+
+            background:
+                radial-gradient(
+                    circle at top,
+                    #dbeafe,
+                    transparent 50%
+                );
+
+        }
+
+
+        .hero-icon {
+
+            font-size: 65px;
+
+            animation: floating 2s infinite;
+
+        }
+
+
+        .hero h1 {
+
+            font-family: "Quicksand", sans-serif;
+
+            font-size: 48px;
+
+            color: #1e3a8a;
+
+            margin-top: 15px;
+
+        }
+
+
+        .hero h2 {
+
+            font-family: "Quicksand", sans-serif;
+
+            color: #3b82f6;
+
+            font-size: 21px;
+
+            margin-top: 5px;
+
+        }
+
+
+        .hero p {
+
+            max-width: 650px;
+
+            margin-top: 20px;
+
+            line-height: 1.9;
+
+            color: #64748b;
+
+        }
+
+
+        @keyframes floating {
+
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-12px);
+            }
+
+        }
+
+
+
+        /* =========================
+           SECTION
+        ========================== */
+
+        section {
+
+            padding: 80px 25px;
+
+            text-align: center;
+
+        }
+
+
+        .title {
+
+            font-family: "Quicksand", sans-serif;
+
+            color: #1e3a8a;
+
+            font-size: 30px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .subtitle {
+
+            color: #94a3b8;
+
+            margin-bottom: 35px;
+
+        }
+
+
+        .text {
+
+            max-width: 700px;
+
+            margin: auto;
+
+            line-height: 2;
+
+            color: #64748b;
+
+        }
+
+
+
+        /* =========================
+           FRIEND CARDS
+        ========================== */
+
+        .friends {
+
+            max-width: 1000px;
+
+            margin: 40px auto 0;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+
+        }
+
+
+        .friend {
+
+            background: white;
+
+            padding: 15px;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 10px 30px rgba(30,58,138,.08);
+
+            transition: .3s;
+
+        }
+
+
+        .friend:hover {
+
+            transform: translateY(-8px);
+
+        }
+
+
+        .friend img {
+
+            width: 100%;
+
+            height: 280px;
+
+            object-fit: cover;
+
+            border-radius: 18px;
+
+        }
+
+
+        .friend h3 {
+
+            font-family: "Quicksand", sans-serif;
+
+            color: #1e3a8a;
+
+            font-size: 21px;
+
+            margin-top: 15px;
+
+        }
+
+
+        .friend p {
+
+            color: #64748b;
+
+            font-size: 14px;
+
+            line-height: 1.7;
+
+            margin-top: 8px;
+
+        }
+
+
+
+        /* =========================
+           FUN CARDS
+        ========================== */
+
+        .fun {
+
+            max-width: 900px;
+
+            margin: 40px auto 0;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+
+        }
+
+
+        .fun-card {
+
+            background: white;
+
+            padding: 30px 20px;
+
+            border-radius: 25px;
+
+            border: 2px solid #eff6ff;
+
+            transition: .3s;
+
+        }
+
+
+        .fun-card:hover {
+
+            transform: translateY(-7px);
+
+            border-color: #bfdbfe;
+
+        }
+
+
+        .emoji {
+
+            font-size: 40px;
+
+        }
+
+
+        .fun-card h3 {
+
+            font-family: "Quicksand", sans-serif;
+
+            color: #1e3a8a;
+
+            margin: 12px 0;
+
+        }
+
+
+        .fun-card p {
+
+            color: #64748b;
+
+            font-size: 14px;
+
+            line-height: 1.8;
+
+        }
+
+
+
+        /* =========================
+           MEMORY
+        ========================== */
+
+        .memory {
+
+            max-width: 700px;
+
+            margin: auto;
+
+            background: white;
+
+            padding: 35px;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 10px 30px rgba(30,58,138,.08);
+
+        }
+
+
+        .memory p {
+
+            line-height: 2;
+
+            color: #64748b;
+
+        }
+
+
+
+        /* =========================
+           SECRET
+        ========================== */
+
+        .secret-button {
+
+            margin-top: 20px;
+
+            padding: 14px 28px;
+
+            border: none;
+
+            border-radius: 50px;
+
+            background: #2563eb;
+
+            color: white;
+
+            font-weight: 600;
+
+            cursor: pointer;
+
+            transition: .3s;
+
+        }
+
+
+        .secret-button:hover {
+
+            transform: scale(1.05);
+
+        }
+
+
+        #secret {
+
+            display: none;
+
+            max-width: 650px;
+
+            margin: 30px auto;
+
+            padding: 35px;
+
+            background: white;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 10px 30px rgba(30,58,138,.1);
+
+            animation: muncul 1s;
+
+        }
+
+
+        #secret p {
+
+            line-height: 2;
+
+            color: #64748b;
+
+        }
+
+
+        #secret strong {
+
+            font-family: "Quicksand", sans-serif;
+
+            font-size: 20px;
+
+            color: #2563eb;
+
+        }
+
+
+        @keyframes muncul {
+
+            from {
+
+                opacity: 0;
+
+                transform: translateY(20px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: translateY(0);
+
+            }
+
+        }
+
+
+
+        /* =========================
+           MUSIC
+        ========================== */
+
+        .music {
+
+            position: fixed;
+
+            right: 20px;
+
+            bottom: 20px;
+
+            z-index: 100;
+
+        }
+
+
+        .music button {
+
+            width: 52px;
+
+            height: 52px;
+
+            border: none;
+
+            border-radius: 50%;
+
+            background: #2563eb;
+
+            color: white;
+
+            font-size: 20px;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 8px 20px rgba(37,99,235,.25);
+
+        }
+
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+
+            background: #1e3a8a;
+
+            color: #dbeafe;
+
+            text-align: center;
+
+            padding: 40px 20px;
+
+        }
+
+
+        footer p {
+
+            font-family: "Quicksand", sans-serif;
+
+            font-weight: 600;
+
+        }
+
+
+        footer small {
+
+            display: block;
+
+            margin-top: 8px;
+
+            color: #bfdbfe;
+
+        }
+
+
+
+        /* =========================
+           HEART
+        ========================== */
+
+        .heart {
+
+            position: fixed;
+
+            top: -20px;
+
+            pointer-events: none;
+
+            z-index: 50;
+
+            animation: jatuh linear forwards;
+
+        }
+
+
+        @keyframes jatuh {
+
+            to {
+
+                transform:
+                    translateY(110vh)
+                    rotate(360deg);
+
+                opacity: 0;
+
+            }
+
+        }
+
+
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 700px) {
+
+            .opening h1 {
+
+                font-size: 28px;
+
+            }
+
+
+            .hero h1 {
+
+                font-size: 36px;
+
+            }
+
+
+            .friends {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .fun {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .friend img {
+
+                height: 320px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+
+    <!-- =========================
+         OPENING
+    ========================== -->
+
+    <div class="opening" id="opening">
+
+        <div class="opening-icon">
+            🫶🏻
+        </div>
+
+
+        <h1>
+            WOII KALIAN BERDUA 😭
+        </h1>
+
+
+        <p>
+
+            Aku ada sesuatu buat kalian.
+
+            <br>
+
+            Tenang, bukan tugas sekolah kok 😭
+
+            <br><br>
+
+            Coba buka dulu...
+
+        </p>
+
+
+        <button
+            class="open-button"
+            onclick="openWebsite()">
+
+            Buka dulu 🤏🏻💙
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <div class="hero">
+
+        <div class="hero-icon">
+            🫶🏻
+        </div>
+
+
+        <h1>
+            Our Little Story
+        </h1>
+
+
+        <h2>
+            3 manusia • 1 cerita • banyak kekacauan
+        </h2>
+
+
+        <p>
+
+            Kalau suatu hari nanti kita sibuk
+            dengan kehidupan masing-masing,
+            semoga halaman kecil ini bisa
+            mengingatkan kita pada masa-masa
+            ketika kita masih sering bersama.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section>
+
+        <h2 class="title">
+            Untuk Kalian 🤍
+        </h2>
+
+
+        <p class="subtitle">
+            dua manusia yang entah kenapa
+            masih mau berteman sama aku 😭
+        </p>
+
+
+        <p class="text">
+
+            Aku cuma mau bilang terima kasih
+            karena sudah menjadi bagian dari
+            cerita hidupku.
+
+            <br><br>
+
+            Kita mungkin sering bercanda,
+            saling mengejek, bahkan kadang
+            bikin kesel satu sama lain.
+
+            <br><br>
+
+            Tapi justru hal-hal kecil seperti itu
+            yang nantinya mungkin akan paling kita
+            rindukan.
+
+            <br><br>
+
+            Semoga persahabatan kita tetap
+            bertahan meskipun nanti kita punya
+            kesibukan dan jalan masing-masing.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         FRIENDS
+    ========================== -->
+
+    <section>
+
+        <h2 class="title">
+            Trio Kita 📸
+        </h2>
+
+
+        <p class="subtitle">
+            silakan lihat manusia-manusia favorit ini 😭
+        </p>
+
+
+        <div class="friends">
+
+
+            <!-- SAHABAT 1 -->
+
+            <div class="friend">
+
+                <img
+                    src="san.png"
+                    alt="Sahabat 1">
+
+
+                <h3>
+                    santri
+                </h3>
+
+
+                <p>
+
+                    Si paling bocill
+
+                    <br>
+
+                    Selalu punya cerita random
+                    dan entah kenapa selalu
+                    berhasil bikin suasana ramai.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- SAHABAT 2 -->
+
+            <div class="friend">
+
+                <img
+                    src="ima.png"
+                    alt="Sahabat 2">
+
+
+                <h3>
+                    Risma
+                </h3>
+
+
+                <p>
+
+                    Si paling Marah-marah
+
+                    <br>
+
+                    Kadang kalem,
+                    kadang juga tiba-tiba
+                    bikin semuanya kacau 😭.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- KAMU -->
+
+            <div class="friend">
+
+                <img
+                    src="hum.ai.png"
+                    alt="Aku">
+
+
+                <h3>
+                    Aku 😌
+                </h3>
+
+
+                <p>
+
+                    Nah kalau yang ini
+                    nggak perlu dijelaskan.
+
+                    <br>
+
+                    Pokoknya aku yang bikin
+                    website ini WKWK.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FUN FACT
+    ========================== -->
+
+    <section>
+
+        <h2 class="title">
+            Kalau Kita Bertiga... 😂
+        </h2>
+
+
+        <p class="subtitle">
+            fakta yang tidak perlu diperdebatkan
+        </p>
+
+
+        <div class="fun">
+
+
+            <div class="fun-card">
+
+                <div class="emoji">
+                    😂
+                </div>
+
+
+                <h3>
+                    Ketawa
+                </h3>
+
+
+                <p>
+
+                    Awalnya cuma ngobrol biasa.
+
+                    <br>
+
+                    Lima menit kemudian
+                    malah ketawa nggak jelas.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="fun-card">
+
+                <div class="emoji">
+                    🍜
+                </div>
+
+
+                <h3>
+                    Makan
+                </h3>
+
+
+                <p>
+
+                    Kalau sudah bingung mau
+                    ngapain, jawabannya selalu:
+
+                    <br>
+
+                    "Makan aja."
+
+                </p>
+
+            </div>
+
+
+
+            <div class="fun-card">
+
+                <div class="emoji">
+                    🤡
+                </div>
+
+
+                <h3>
+                    Kekacauan
+                </h3>
+
+
+                <p>
+
+                    Tidak ada yang tahu siapa
+                    yang memulai.
+
+                    <br>
+
+                    Tapi biasanya berakhir
+                    dengan kita bertiga ketawa.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         MEMORY
+    ========================== -->
+
+    <section>
+
+        <h2 class="title">
+            Sedikit Pesan 💌
+        </h2>
+
+
+        <div class="memory">
+
+            <p>
+
+                Kalau nanti kita sudah punya
+                kesibukan masing-masing,
+                jangan sampai lupa sama cerita
+                yang pernah kita buat.
+
+                <br><br>
+
+                Jangan lupa orang-orang yang
+                pernah menemani masa sekolah,
+                masa susah, masa senang,
+                dan masa-masa nggak jelas kita.
+
+                <br><br>
+
+                Karena mungkin suatu hari nanti,
+                kita akan melihat kembali foto-foto
+                ini dan berkata...
+
+                <br><br>
+
+                <strong>
+                    "Ternyata kita pernah se-random ini." 😭
+                </strong>
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SECRET
+    ========================== -->
+
+    <section>
+
+        <h2 class="title">
+            Jangan Dibuka 👀
+        </h2>
+
+
+        <p class="subtitle">
+            serius, jangan klik...
+        </p>
+
+
+        <button
+            class="secret-button"
+            onclick="showSecret()">
+
+            Aku bilang jangan 😭
+
+        </button>
+
+
+        <div id="secret">
+
+            <p>
+
+                Yah, dibuka juga 😭
+
+                <br><br>
+
+                Sebenarnya aku cuma mau bilang...
+
+                <br><br>
+
+                <strong>
+                    Aku sayang kalian sebagai sahabat. 🫶🏻
+                </strong>
+
+                <br><br>
+
+                Terima kasih sudah menjadi
+                bagian dari cerita hidupku.
+
+                <br><br>
+
+                Jangan berubah jadi orang asing
+                cuma karena nanti kita punya
+                kesibukan masing-masing.
+
+                <br><br>
+
+                Tetap jadi manusia random
+                yang aku kenal sampai nanti.
+
+                <br><br>
+
+                <strong>
+                    Love you, besties! 💙
+                </strong>
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         MUSIC
+    ========================== -->
+
+    <audio id="music" loop>
+
+        <source
+            src="best_friend.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+
+    <div class="music">
+
+        <button onclick="toggleMusic()">
+            🎵
+        </button>
+
+    </div>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            Made with 💙 for my favorite people
+        </p>
+
+
+        <small>
+            3 manusia • 1 cerita • forever memories
+        </small>
+
+    </footer>
+
+
+
+    <script>
+
+
+        /* =========================
+           BUKA WEBSITE
+        ========================== */
+
+        function openWebsite() {
+
+            document
+                .getElementById("music")
+                .play();
+
+
+            document
+                .getElementById("opening")
+                .style.opacity = "0";
+
+
+            setTimeout(function() {
+
+                document
+                    .getElementById("opening")
+                    .style.display = "none";
+
+            }, 1000);
+
+        }
+
+
+
+        /* =========================
+           MUSIK
+        ========================== */
+
+        let playing = true;
+
+
+        function toggleMusic() {
+
+            let music =
+                document.getElementById("music");
+
+
+            if (playing) {
+
+                music.pause();
+
+                playing = false;
+
+            } else {
+
+                music.play();
+
+                playing = true;
+
+            }
+
+        }
+
+
+
+        /* =========================
+           PESAN RAHASIA
+        ========================== */
+
+        function showSecret() {
+
+            document
+                .getElementById("secret")
+                .style.display = "block";
+
+
+            createHearts();
+
+        }
+
+
+
+        /* =========================
+           ANIMASI HATI
+        ========================== */
+
+        function createHearts() {
+
+            for (let i = 0; i < 25; i++) {
+
+                let heart =
+                    document.createElement("div");
+
+
+                heart.classList.add("heart");
+
+
+                heart.innerHTML =
+                    Math.random() > .5
+                    ? "💙"
+                    : "🫶🏻";
+
+
+                heart.style.left =
+                    Math.random() * 100 + "vw";
+
+
+                heart.style.fontSize =
+                    Math.random() * 15 + 15 + "px";
+
+
+                heart.style.animationDuration =
+                    Math.random() * 3 + 3 + "s";
+
+
+                document.body.appendChild(heart);
+
+
+                setTimeout(function() {
+
+                    heart.remove();
+
+                }, 6000);
+
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
